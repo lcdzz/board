@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+db-data
+.env
+.DS_Store
+
+api/src/generated/prisma
