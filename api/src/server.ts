@@ -1,5 +1,5 @@
 import app from './app';
-import prisma from './plugins/db';
+import prisma from '@plugins/db';
 
 const start = async () => {
   try {

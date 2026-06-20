@@ -20,9 +20,9 @@ The project uses a `.env` file at the repo root for database secrets and backend
 Example `.env`:
 
 ```env
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
-POSTGRES_DB=boarddb
-DATABASE_URL=postgres://postgres:postgres@db:5432/boarddb
+POSTGRES_USER=user
+POSTGRES_PASSWORD=pass
+POSTGRES_DB=board
+DATABASE_URL=postgres://user:pass@db:5432/board
 PORT=4000
 ```

@@ -1,15 +1,16 @@
-import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
-import { CreateBoardDto, IdParams, UpdateBoardDto } from './board.types';
+import { FastifyInstance } from 'fastify';
+import { CreateBoardDto, UpdateBoardDto } from './board.types';
 import { boardService } from './board.service';
+import { IdParams } from '@shared/types';
 
 export function boardRoutes(fastify: FastifyInstance, opts: any, done: () => void) {
-  fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
+  fastify.get('/', async (request, reply) => {
     const boards = await boardService.findAll();
     reply.send(boards);
   });
 
   fastify.get<{ Params: IdParams }>('/:id', async (request, reply) => {
-    const board = await boardService.findById(request.params.id);
+    const board = await boardService.findByIdWithDetails(request.params.id);
     reply.send(board);
   });
 
