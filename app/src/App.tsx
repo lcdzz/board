@@ -1,11 +1,18 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+import { Route, Routes } from 'react-router-dom';
 
-export default function App() {
+import { NavBar } from '@core/components';
+import { Home } from '@features/home';
+import { BoardDetail, Boards } from '@features/boards';
+
+export function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  )
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/boards" element={<Boards />} />
+        <Route path="/boards/:id" element={<BoardDetail />} />
+      </Routes>
+    </>
+  );
 }

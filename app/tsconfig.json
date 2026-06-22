@@ -6,6 +6,11 @@
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "paths": {
+      "@features/*": ["./src/features/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@core/*": ["./src/core/*"]
+    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

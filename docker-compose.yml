@@ -30,12 +30,20 @@ services:
     depends_on:
       - db
 
-  # app:
-  #   build: ./app
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     - api
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile.dev
+    command: sh -c "npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    environment:
+      VITE_API_URL: http://localhost:4000
+    depends_on:
+      - api
 
 volumes:
   db-data:

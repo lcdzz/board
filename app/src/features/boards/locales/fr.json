@@ -1,0 +1,9 @@
+{
+  "boards": "Tableaux",
+  "create": "Créer",
+  "createdDt": "Créé",
+  "lastUpdatedDt": "Dernière mise à jour",
+  "createBoardPrompt": "Entrez le nom du tableau :",
+  "boardsLoadError": "Impossible de charger les tableaux",
+  "boardCreateError": "Impossible de créer le tableau"
+}

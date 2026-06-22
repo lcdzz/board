@@ -11,7 +11,7 @@ This workspace contains a minimal Trello-like scaffold: a PostgreSQL database, a
 docker-compose up --build
 ```
 
-3. Backend API will be at `http://localhost:4000`.
+3. Frontend will be at `http://localhost:5173`.
 
 ## Environment
 

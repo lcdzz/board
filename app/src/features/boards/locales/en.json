@@ -1,0 +1,9 @@
+{
+  "boards": "Boards",
+  "create": "Create",
+  "createdDt": "Created",
+  "lastUpdatedDt": "Last updated",
+  "createBoardPrompt": "Enter board name:",
+  "boardsLoadError": "Failed to load boards",
+  "boardCreateError": "Failed to create board"
+}
