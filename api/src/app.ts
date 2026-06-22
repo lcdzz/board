@@ -1,10 +1,11 @@
 import 'dotenv/config';
-import Fastify from 'fastify';
+
 import cors from '@fastify/cors';
 import { boardRoutes } from '@modules/boards';
-import { AppError } from '@shared/errors';
 import { cardRoutes } from '@modules/cards';
 import { columnRoutes } from '@modules/columns';
+import { AppError } from '@shared/errors';
+import Fastify from 'fastify';
 
 const app = Fastify({ logger: true });
 

@@ -1,8 +1,9 @@
-import prisma from '@plugins/db';
-import { NotFoundError, ValidationError } from '@shared/errors';
-import { CreateColumnDto, MoveColumnDto, UpdateColumnDto } from './column.types';
 import { boardService } from '@modules/boards';
+import prisma from '@plugins/db';
 import type { Prisma } from '@prisma/client';
+import { NotFoundError, ValidationError } from '@shared/errors';
+
+import { CreateColumnDto, MoveColumnDto, UpdateColumnDto } from './column.types';
 
 type ColumnSequenceUpdate = {
   id: string;

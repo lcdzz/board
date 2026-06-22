@@ -1,7 +1,8 @@
-import { FastifyInstance } from 'fastify';
-import { CreateColumnDto, MoveColumnDto, UpdateColumnDto } from './column.types';
-import { columnService } from './column.service';
 import { IdParams } from '@shared/types';
+import { FastifyInstance } from 'fastify';
+
+import { columnService } from './column.service';
+import { CreateColumnDto, MoveColumnDto, UpdateColumnDto } from './column.types';
 
 export function columnRoutes(fastify: FastifyInstance, opts: any, done: () => void) {
   fastify.get('/', async (request, reply) => {

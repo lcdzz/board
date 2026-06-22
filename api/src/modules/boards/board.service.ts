@@ -1,5 +1,6 @@
 import prisma from '@plugins/db';
 import { NotFoundError } from '@shared/errors';
+
 import { BoardWithDetails, CreateBoardDto, UpdateBoardDto } from './board.types';
 
 class BoardService {

@@ -1,4 +1,4 @@
-import { Board, Column, Card } from '@prisma/client';
+import { Board, Card, Column } from '@prisma/client';
 
 export type CreateBoardDto = {
   name: string;

@@ -3,6 +3,10 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "eslint.format.enable": true,
+  "eslint.workingDirectories": [
+    { "directory": "./api", "changeProcessCWD": true },
+    { "directory": "./app", "changeProcessCWD": true }
+  ],
   "files.exclude": {
     "node_modules": true,
     "dist": true,

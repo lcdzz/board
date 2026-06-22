@@ -1,7 +1,8 @@
-import { FastifyInstance } from 'fastify';
-import { CreateBoardDto, UpdateBoardDto } from './board.types';
-import { boardService } from './board.service';
 import { IdParams } from '@shared/types';
+import { FastifyInstance } from 'fastify';
+
+import { boardService } from './board.service';
+import { CreateBoardDto, UpdateBoardDto } from './board.types';
 
 export function boardRoutes(fastify: FastifyInstance, opts: any, done: () => void) {
   fastify.get('/', async (request, reply) => {

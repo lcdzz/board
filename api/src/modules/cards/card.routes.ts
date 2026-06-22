@@ -1,7 +1,8 @@
-import { FastifyInstance } from 'fastify';
-import { CreateCardDto, MoveCardDto, UpdateCardDto } from './card.types';
-import { cardService } from './card.service';
 import { IdParams } from '@shared/types';
+import { FastifyInstance } from 'fastify';
+
+import { cardService } from './card.service';
+import { CreateCardDto, MoveCardDto, UpdateCardDto } from './card.types';
 
 export function cardRoutes(fastify: FastifyInstance, opts: any, done: () => void) {
   fastify.get('/', async (request, reply) => {

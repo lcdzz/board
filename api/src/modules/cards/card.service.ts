@@ -1,8 +1,9 @@
-import prisma from '@plugins/db';
-import { NotFoundError, ValidationError } from '@shared/errors';
-import { CreateCardDto, MoveCardDto, UpdateCardDto } from './card.types';
 import { columnService } from '@modules/columns';
+import prisma from '@plugins/db';
 import type { Prisma } from '@prisma/client';
+import { NotFoundError, ValidationError } from '@shared/errors';
+
+import { CreateCardDto, MoveCardDto, UpdateCardDto } from './card.types';
 
 type CardSequenceUpdate = {
   id: string;
